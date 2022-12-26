@@ -55,18 +55,39 @@
     font-family: var(--ff-regular);
     background-color: var(--clr-primary-900);
     color: var(--clr-neutral-300);
+    margin: 1.5rem;
+
+    display: grid;
+    place-content: center;
   }
 
   .stats-card {
     background-color: var(--clr-primary-700);
   }
 
-  .card__title {
+  .card__content {
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .card__title,
+  .stat-number {
     color: var(--clr-neutral-100); 
+    font-weight: var(--fw-bold);
   }
 
   .accent {
     color: var(--clr-primary-300);
+  }
+
+  .card__stats {
+    list-style: none;
+  }
+
+  .stat-text {
+    font-family: var(--ff-accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
 .attribution { font-size: 11px; text-align: center; }
