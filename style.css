@@ -139,3 +139,22 @@
   .attribution a { 
     color: hsl(228, 45%, 44%); 
   }
+
+  @media (min-width: 575px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .stats-card,
+    .card__stats {
+      display: flex;
+    }
+
+    .stats-card {
+      flex-direction: row-reverse;
+    }
+  }
